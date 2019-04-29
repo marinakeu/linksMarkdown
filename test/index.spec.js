@@ -29,12 +29,12 @@ const noLinkArray = [];
 
 describe('getLinksFromMd', () => {
     it(`Deveria retornar 3 links`, () => {
-        expect(piece.getLinksFromMd(fullStr)).to.equal(fullArray.length);
+        expect(piece.getLinksFromMd(fullStr)).to.eql(fullArray);
 });
 it(`Deveria retornar 1 link`, () => {
-    expect(piece.getLinksFromMd(oneLinkStr)).to.equal(oneLinkArray.length);
+    expect(piece.getLinksFromMd(oneLinkStr)).to.eql(oneLinkArray);
 });
 it(`Deveria retornar 0 links`, () => {
-    expect(piece.getLinksFromMd(noLinkStr)).to.equal(noLinkArray.length);
+    expect(piece.getLinksFromMd(noLinkStr)).to.eql(noLinkArray);
 });
 });
