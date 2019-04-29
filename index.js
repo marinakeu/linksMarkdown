@@ -1,10 +1,9 @@
-function getLinksFromMd() {
-    let ob = [
-        { href: 'https://en.wiktionary.org/wiki/labore', text: 'labore' },
-        { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
-        { href: 'http://foo.com', text: 'foo' },
-    ]
-    return ob;
+function getLinksFromMd(str) {
+    
+    let array = [1, 2, 3];
+        
+   
+    return array.length;
 }
 
 module.exports.getLinksFromMd = getLinksFromMd;
