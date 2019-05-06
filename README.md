@@ -9,7 +9,8 @@ $  npm install linksmarkdown-mk
 ## Como utilizar:
 
     > const linksMd = require("linksmarkdown-mk");
-    > console.log(linksMd.getLinksFromMd('ut aliquip ex ea commodo consequat. [foo](http://foo.com) Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'))
+    > console.log(linksMd.getLinksFromMd('ut aliquip ex ea commodo consequat. [foo](http://foo.com) Duis 
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'))
     > // returns [{ href:  'http://foo.com', text:  'foo' }];
 
 ## roadmap oficial do projeto
