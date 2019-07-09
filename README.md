@@ -3,6 +3,9 @@
   
 
 **Essa biblioteca se destina à extrair links de arquivos markdown.**
+
+Acesse a biblioteca no npm: [linksmarkdown-mk](https://www.npmjs.com/package/linksmarkdown-mk)
+
 A versão atual extrai links de um texto no formato markdown fornecido como entrada. Por meio da função getLinksFromMd() que recebe uma string a biblioteca retorna um array de objetos contendo titulo e o link.
 
 ### Como instalar:  
