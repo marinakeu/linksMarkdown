@@ -1,20 +1,33 @@
-# Extrair links de Markdown v.1.0.0
+## Extrair links de arquivo Markdown v.1.0.1
 
-**Esta biblioteca se destina à extrair links de arquivos markdown.**  
+  
 
-## Como instalar:
+**Essa biblioteca se destina à extrair links de arquivos markdown.**
+A versão atual extrai links de um texto no formato markdown fornecido como entrada. Por meio da função getLinksFromMd() que recebe uma string a biblioteca retorna um array de objetos contendo titulo e o link.
 
-$  npm install linksmarkdown-mk
+### Como instalar:  
+```
+$ npm install linksmarkdown-mk
+```
 
-## Como utilizar:
 
-    > const linksMd = require("linksmarkdown-mk");
-    > console.log(linksMd.getLinksFromMd('ut aliquip ex ea commodo consequat. [foo](http://foo.com) Duis 
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'))
-    > // returns [{ href:  'http://foo.com', text:  'foo' }];
+(Você deverá ter o node e npm instalados antes de instalar a biblioteca. Para guia de instalação do npm, visite  [o site](https://www.npmjs.com/get-npm).)
 
-## roadmap oficial do projeto
+  
 
-#### versão 1.0.0 (released)
+### Como utilizar:
 
--   funcionalidades: extração de links em arquivos markdown.
+ ````javascript
+$node
+> const linksMd = require("linksmarkdown-mk");
+> console.log(linksMd.getLinksFromMd('ut aliquip ex ea commodo consequat. [foo](http://foo.com) Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'))
+> // returns [{ href: 'http://foo.com', text: 'foo' }];
+````
+  
+
+### versão 1.0.1 (released)  
+
+- funcionalidades: extração de links de um texto em markdown;
+- função de extração retorna os links e os seus respectivos textos em um array de objetos.
+
+

@@ -1,12 +1,14 @@
 function getLinksFromMd (str) {
-  let texts = str.match(/(?<=\[).+?(?=(\]\())/g);
-  let hrefs = str.match(/(?<=\]\()(.+?)(?=\))/g);
-  let array = [];
+  const texts = str.match(/(?<=\[).+?(?=(\]\())/g);
+  const hrefs = str.match(/(?<=\]\()(.+?)(?=\))/g);
   if (texts && texts.length === hrefs.length) {
-    texts.forEach((element, index) => array.push({ href: hrefs[index],
-      text: element}));
-  }    
-  return array;
+    return texts.map((element, index) => {
+      return {
+        href: hrefs[index],
+        text: element
+      };
+    });
+  }
 }
 
 module.exports.getLinksFromMd = getLinksFromMd;
