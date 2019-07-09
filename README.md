@@ -14,7 +14,7 @@ $ npm install linksmarkdown-mk
 ```
 
 
-(Você deverá ter o node e npm instalados antes de instalar a biblioteca. Para guia de instalação do npm, visite  [o site](https://www.npmjs.com/get-npm).)
+(Você deverá ter o node e npm instalados antes de instalar a biblioteca. Para guia de instalação do npm visite  [o site](https://www.npmjs.com/get-npm).)
 
   
 
